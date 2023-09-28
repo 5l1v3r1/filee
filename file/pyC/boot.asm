@@ -8,11 +8,7 @@ start:
 	mov bx, display ; Store our message in the BX register
 	
 
-; This function will print a string!
-; Arguments:
-;  BX: The string to print, must be NULL terminated
-; Requirements:
-;  cls must have been called
+
 print:
 	mov al, [bx] ; Dereference the BX string pointer, in C this would look like: al = *bx;
 	cmp al, 0 ; Check if the character is a NULL terminator
