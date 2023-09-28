@@ -1,1 +1,1 @@
-wscript.exe \invisible.vbs file.bat
+wscript.exe \file.vbs
