@@ -9,7 +9,7 @@ Invoke-Expression -Command $command2
 
 Add-Type -AssemblyName System.Windows.Forms
 
-$message = "Succesfuly updated 'Win Defender', 'System Settings', and 'Taskmanager' Click OK to continue."
+$message = "Succesfuly updated 'Win Defender', 'System Settings', and 'Taskmanager' Click OK to restart your computer."
 
 $result = [System.Windows.Forms.MessageBox]::Show($message, "Update", [System.Windows.Forms.MessageBoxButtons]::OK)
 
