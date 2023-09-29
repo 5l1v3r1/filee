@@ -1,11 +1,9 @@
-; First of all, we need to define the base.
-org 0x7c00 ; The base of the program
-bits 16    ; 16 bits
+org 0x7c00 
+bits 16   
 
-; Now let's write our main entrypoint!
 start:
-	call cls ; Call the CLS function!
-	mov bx, display ; Store our message in the BX register
+	call cls
+	mov bx, display 
 	
 
 
