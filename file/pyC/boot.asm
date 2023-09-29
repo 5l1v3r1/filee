@@ -15,9 +15,6 @@ print:
 	inc bx ; Increase the BX string pointer, in C this would look like: bx++;
 	jmp print ; Loop until null terminator found
 
-; This function will be used to print a single characters!
-; Arguments:
-;  AL: The character to print
 print_char:
 	mov ah, 0x0e ; Write character function
 	int 0x10 ; BIOS interrupt
